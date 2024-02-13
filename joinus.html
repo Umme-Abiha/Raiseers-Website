@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="joinus">
+
+<div class="raiseers-form">
+    <h2>Become a Volunteer for Raiseers</h2>
+    <form action="signup_process.php" method="post" enctype="multipart/form-data">
+        <label for="name"><i class="fas fa-user"></i> Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email"><i class="fas fa-envelope"></i> Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone"><i class="fas fa-phone"></i> Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="skills"><i class="fas fa-cogs"></i> Skills (if any):</label>
+        <input type="text" id="skills" name="skills">
+
+        <label for="availability"><i class="far fa-clock"></i> Availability:</label>
+        <input type="text" id="availability" name="availability" placeholder="E.g. Weekdays after 5pm, Weekends, etc.">
+
+        <label for="cv"><i class="far fa-file-alt"></i> Upload CV (PDF, DOCX):</label>
+        <input type="file" id="cv" name="cv" accept=".pdf,.docx">
+
+        <label for="image"><i class="far fa-image"></i> Upload Image:</label>
+        <input type="file" id="image" name="image" accept="image/*">
+
+        <label for="message"><i class="fas fa-comment"></i> Additional Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>
